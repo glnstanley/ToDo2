@@ -30,7 +30,7 @@
             <td>{{todo.Text}}</td>
             <td>{{todo.Priority}}</td>
             <td>{{todo.DueDate | date:'MM/dd/yyyy' }}</td>
-            <td><a a href="#/edit/{{todo.Id}}"><i class="fa fa-edit"></i></a>
+            <td><a a href="#/edit/{{todo.Id}}"><i data-rel="tooltip" title="Hello Tooltip!" data-placement="top" class="fa fa-edit"></i></a>
                 <a ng-click="delete()"><i class="fa fa-times-circle"></i></a>
             </td>
         </tr>
